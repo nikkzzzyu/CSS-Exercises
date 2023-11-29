@@ -1,19 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.exercise-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.exercise-item {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* Exercise 1: Basic Box Model */
+
 .box {
     width: 200px;
     height: 150px;
     padding: 20px;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 10px;
+    display: inline-block;
+    text-align: center; 
+}
+
+.box p {
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
 }
 
 #box1 {
-    background-color: blue;
+    background-color: #FF8080;
 }
 
 #box2 {
-    background-color: aqua;
+    background-color: #FFC6AC;
 }
 
 #box3 {
-    background-color: red;
+    background-color: #96B6C5;
+}
+
+/* Exercise 2: Centering Elements */
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: #e3e3e3;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+ /* Exercise 3: Floating Elements */
+
+.float-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    background-color: #98FB98;
+}
+
+/* Exercise 4: Responsive Design with Media Queries */
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}
+
+/* Exercise 5: Flexbox Layout */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-box {
+    flex: 1;
+    height: 50px;
+    background-color: #87CEEB;
+    margin: 10px;
+}
+
+/* Exercise 6: Grid Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    height: 100px;
+    background-color: #FFD700;
+    text-align: center;
+    padding: 10px;
+}
+
+ /* Exercise 7: Complex Layout */
+
+.complex-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.header, .footer {
+    background-color: #FFA07A;
+    padding: 10px;
+}
+
+.sidebar, .main-content {
+    background-color: #DDA0DD;
+    padding: 10px;
+}
+
+ /* Exercise 8: Card Layout */
+
+.card {
+    width: 200px;
+    background-color: #87CEFA;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Exercise 9: Nesting Elements */
+
+.parent-box {
+    background-color: #F0E68C;
+    padding: 20px;
+    margin: 10px;
+}
+
+.child-box {
+    background-color: #98FB98;
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    margin: 1in;
 }
