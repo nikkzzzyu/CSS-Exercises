@@ -20,6 +20,12 @@ body {
     font-size: 18px;
 }
 
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* Exercise 1: Basic Box Model */
 
 .box {
@@ -29,36 +35,39 @@ body {
     border: 1px solid black;
     margin: 10px;
     display: inline-block;
-    text-align: center; 
+    text-align: center;
+    font-size: 20px;
 }
 
 .box p {
     font-size: 20px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #box1 {
-    background-color: #FF8080;
-}
-
-#box2 {
     background-color: #FFC6AC;
 }
 
+#box2 {
+    border-radius: 30px;
+    background-color: #FFD6A5;
+}
+
 #box3 {
-    background-color: #96B6C5;
+    border-style: dotted;
+    background-color: #C4DFDF;
 }
 
 /* Exercise 2: Centering Elements */
 
 .container {
-    width: 300px;
-    height: 300px;
-    background-color: #e3e3e3;
+    width: 250px;
+    height: 250px;
+    background-color: #FBE8E7;
     margin: 0 auto;
     padding: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
  /* Exercise 3: Floating Elements */
@@ -66,17 +75,22 @@ body {
 .float-box {
     width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-right: 50px;
     float: left;
-    background-color: #98FB98;
+    background-color: #AEC3AE;
 }
 
 /* Exercise 4: Responsive Design with Media Queries */
 
 @media only screen and (max-width: 600px) {
     .box {
-        width: calc(100% - 20px);
-        margin: 10px;
+        width: min-content;
+        display: flex;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -90,7 +104,7 @@ body {
 .flex-box {
     flex: 1;
     height: 50px;
-    background-color: #87CEEB;
+    background-color: #BCBAB8;
     margin: 10px;
 }
 
@@ -104,9 +118,10 @@ body {
 
 .grid-item {
     height: 100px;
-    background-color: #FFD700;
+    background-color: #FFE5B9;
     text-align: center;
     padding: 10px;
+    font-size: 20px;
 }
 
  /* Exercise 7: Complex Layout */
@@ -118,26 +133,34 @@ body {
     gap: 10px;
     margin: 0 auto;
     max-width: 800px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 .header, .footer {
-    background-color: #FFA07A;
+    background-color: #F6C6EA;
     padding: 10px;
 }
 
 .sidebar, .main-content {
-    background-color: #DDA0DD;
+    background-color: #C9CBFF;
     padding: 10px;
 }
 
  /* Exercise 8: Card Layout */
 
 .card {
-    width: 200px;
-    background-color: #87CEFA;
-    padding: 10px;
+    width: 350px;
+    height: 350px;
+    background-color: #C0DBEA;
+    font-size: 20px;
+    padding: 20px;
     margin: 10px;
+    display: grid;
+    border: 1px solid;
+    font-family: 'Times New Roman', Times, serif;
     transition: transform 0.3s ease-in-out;
+
 }
 
 .card:hover {
@@ -147,13 +170,15 @@ body {
 /* Exercise 9: Nesting Elements */
 
 .parent-box {
-    background-color: #F0E68C;
+    background-color: #EDE4E0;
     padding: 20px;
     margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 .child-box {
-    background-color: #98FB98;
+    background-color: #FEFCF3;
     padding: 10px;
     margin: 10px;
 }
