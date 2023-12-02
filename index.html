@@ -18,15 +18,22 @@
         <!-- Exercise 2: Centering Elements -->
         <p class="title">Exercise 2</p>
         <div class="container">
-            <p>Centering Elements</p>
-            <p>Content inside the container</p>
+            <p>Hello!</p>
+            <p>
+                I'm centering elements both
+                horizontally and vertically using
+                margin and padding. :>
+            </p>
+            <p> - Nikka - </p>
         </div>
 
         <!-- Exercise 3: Floating 3lements -->
-        <p class="title">Exercise 3</p>
-        <div class="float-box"></div>
-        <div class="float-box"></div>
-        <div class="float-box"></div>  
+        <div class="clearfix">
+            <p class="title">Exercise 3</p>
+            <div class="float-box"></div>
+            <div class="float-box"></div>
+            <div class="float-box"></div>  
+        </div>
 
         <!-- Exercise 4: Responsive Design with Media Queries -->
         <p class="title">Exercise 4</p>
@@ -45,9 +52,56 @@
         <!-- Exercise 6: Grid Layout -->
         <p class="title">Exercise 6</p>
         <div class="grid-container">
-            <div class="grid-item">Item 1</div>
-            <div class="grid-item">Item 2</div>
-            <div class="grid-item">Item 3</div>
+            <div class="grid-item">
+                <h2 class="heading">Characters</h2>
+                <p>
+                    Genshin Impact Archons are the presiding Gods 
+                    of each region in Teyvat, totaling seven nations.
+                </p>
+                <ul class="character-list">
+                    <li>Venti (Mondstadt)</li>
+                    <li>Zhongli (Liyue)</li>
+                    <li>Raiden (Inazuma)</li>
+                    <li>Nahida (Sumeru)</li>
+                    <li>Furina (Fontaine)</li>
+                    <li>N/A</li>
+                    <li>N/A</li>
+                </ul>
+        </ul>
+            </div>
+            <div class="grid-item">
+                <h2 class="heading">Signature Weapon</h2>
+                <p>
+                    Signature weapon (signature, signa) is a weapon 
+                    designed for a specific hero/character.
+                </p>
+                <ul class="weapon-list">
+                    <li>Skyward Harp</li>
+                    <li>Vortex Vanquisher</li>
+                    <li>Engulfing Lightning</li>
+                    <li>A Thousand Floating Dreams</li>
+                    <li>Splendor of Tranquil Waters</li>
+                    <li>N/A</li>
+                    <li>N/A</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2 class="heading">Vision</h2>
+                <p>
+                    Vision is a gift from the gods bestowed upon 
+                    those with great ambition or passion living 
+                    in Teyvat.
+                </p>
+                <ul class="vision-list">
+                    <li>Anemo</li>
+                    <li>Geo</li>
+                    <li>Electro</li>
+                    <li>Dendro</li>
+                    <li>Hydro</li>
+                    <li>N/A</li>
+                    <li>N/A</li>
+                </ul>
+            </div>
         </div>
 
         <!-- Exercise 7: Complex Layout -->
@@ -62,17 +116,70 @@
         <!-- Exercise 8: Card Layout -->
 
         <p class="title">Exercise 8</p>
-        <div class="card">Card 1</div>
-        <div class="card">Card 2</div>
-        <div class="card">Card 3</div>
+        <div class="card">
+            <img src="./img/Katsu_Sandwich.jpg" alt="Product 1">
+            <div class="card-content">
+                <h2>Katsu Sandwich</h2>
+                <p>
+                    Katsu Sandwich is a food item that can
+                    be obtainable from Ryouko in Ritou
+                    for 2500 Mora.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/Jade.jpg" alt="Product 2">
+            <div class="card-content">
+                <h2>Cloud-Shrouded Jade</h2>
+                <p>
+                    Cloud-Shrouded Jade is a special food item
+                    by cooking Lotus Seed and Bird Egg Soup.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/Fruit_Tea.jpg" alt="Product 3">
+            <div class="card-content">
+                <h2>Fruit Tea</h2>
+                <p>
+                    Fragrant osmanthus is mixed with a host 
+                    of fruits. Additional statistics regarding 
+                    the restaurant. 
+                </p>
+            </div>
+        </div>
 
         <!-- Exercise 9: Nesting Elements -->
         <p class="title">Exercise 9</p>
         <div class="parent-box">
             <p>Parent Box</p>
-            <div class="child-box"><p>Child Box 1</p></div>
-            <div class="child-box"><p>Child Box 2</p></div>
+            <div class="child-box">
+                <p>Child Box 1</p>
+                <div>
+                    <div class="grandchild-box">
+                        <p class="box-content">Grandchild Box</p>
+                    </div>
+                </div>
+            </div>
+            <div class="child-box">
+                <p>Child Box 2</p>
+                <div>
+                    <div class="grandchild-box">
+                        <p class="box-content">Grandchild Box</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </body>
+    <footer>
+        <p>
+            <span class="code">&lt;</span>
+            <span class="code">&#47;&gt;</span>
+            with
+            <span class="heart"></span>
+            by Nikka
+        </p>
+    </footer> 
 </html>
