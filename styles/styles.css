@@ -1,14 +1,34 @@
 body {
     margin: 0 auto;
-    box-sizing: border-box;
-    display: inline-block;
-    align-items: center;
-    left: 50%;
-    margin-left: 300px;
+    position: absolute;
+    top: 45px;
+    left: 25%;
+    margin-left: 100px;
     height: 100vh;
-    overflow-x: hidden;
-    max-width: calc(100% - 50px);
+    background: transparent;
+    transform: translateX(-4%);
     z-index: 2;
+    max-width: calc(100% - 50px);
+}
+
+body::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+}
+
+.background {
+    width: 100%;
+    width: var(--wrapper-width);
+    background: #fbfbfb;
+    margin: 20px auto;
+    border: 1px solid var(--color-reverse);
+    box-shadow: 0 0 20px -3px var(--base-border);
+    position: relative;
+    display: inline-block;
 }
 
 .exercise-list {
@@ -56,7 +76,7 @@ body {
 }
 
 #box2 {
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #FFD6A5;
 }
 
@@ -82,7 +102,7 @@ body {
 .float-box {
     width: 100px;
     height: 100px;
-    margin: 20px;
+    margin-right: 40px;
     padding: 20px;
     float: left;
     background-color: #AEC3AE;
@@ -95,10 +115,18 @@ body {
 }
 
 /* Exercise 4: Responsive Design with Media Queries */
-@media only screen and (max-width: 650px) {
+/* For Desktop View */
+@media screen and (min-device-width: 768px) 
+and (max-device-width: 1024px) {
     body {
-        margin: 0.5in;
-        line-height: 1.5;
+        margin: 0 auto;
+        background: #fbfbfb;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .title, footer,  footer .heart::before {
+        text-align: left;
     }
 
     .container-center {
@@ -109,11 +137,50 @@ body {
     }
 
     .box, .container, .float-box, .flex-box, .grid-item, .card, .parent-box {
-        width: 200% !important;
-        box-sizing: border-box;
-        margin: center;
+        width: 50%;
+        margin: right;
+        right: 5%;
+        margin-right: 5px;
     }
 }
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
+
+}
+
+/* For Mobile View */
+@media screen and (max-device-width: 320px)
+and (min-device-height: 375px) 
+and (device-height: 568px)
+and (min-device-height: 640px) 
+and (min-device-height: 667px) 
+and (orientation: landscape) /* #landscape view */
+and (orientation: portrait) /* #portrait view */
+and (-webkit-min-device-pixel-ratio: 2)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+} 
+
+#box4 {
+    background-color: #CDF5FD;
+    border-style: dashed;
+    border-width: 3px;
+}
+
+#box5 {
+    background-color: #E3F4F4;
+    border-style: dotted;
+    border-width: 3px;
+}
+
+#box6 {
+    background-color: #EEEEEE;
+    border-style: dashed;
+    border-width: 3px;
+}
+
 
 /* Exercise 5: Flexbox Layout */
 
@@ -131,20 +198,41 @@ body {
 
 /* Exercise 6: Grid Layout */
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+.grid {
+    background: #fbfbfb;
+    max-width: 670px;
 }
 
-.grid-item {
-    width: 250px;
-    height: 295px;
-    background-color: #FFE5B9;
-    margin: 8px;
-    padding: 10px;
-    font-size: 17px;
+/* clearfix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
 }
+
+/* ---- grid-item ---- */
+
+.grid-item {
+    width: 150px;
+    height: 120px;
+    float: left;
+    background: #A1CCD1;
+    border: 2px solid rgb(0, 0, 0);
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    display: block;
+}
+
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
 
 .heading {
     text-align: center;
@@ -237,7 +325,7 @@ body {
 footer {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: #ffffff;
+    background: #fbfbfb;
     color: #000000;
 }
 
@@ -255,10 +343,10 @@ footer .code {
 
 ::-moz-selection { 
     color: #000000;
-    background: #000000;
+    background: #fbfbfb;
 }
 
 ::selection {
     color: #000000;
-    background: #000000;
+    background: #fbfbfb;
 }
